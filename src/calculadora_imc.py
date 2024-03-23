@@ -27,14 +27,14 @@ def classificar_imc(imc):
 def main():
     print("Calculadora de IMC\n")
     try:
-        peso = float(input("Por favor, insira seu peso em kg: "))
+        peso = float(input("Insira seu peso em kg(EXEMPLO 84): "))
         altura = float(input("Insira sua altura em metros(EXEMPLO:1.70): "))
         imc = calcular_imc(peso, altura)
         categoria = classificar_imc(imc)
         print(f"\nSeu IMC é: {imc:.2f}")
         print(f"Você está dentro da faixa de {categoria}.")
     except ValueError:
-        print("Por favor, insira números válidos para peso e altura.")
+        print("Insira números válidos para peso e altura segundo os exemplos.")
 
 
 if __name__ == "__main__":
